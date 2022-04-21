@@ -186,8 +186,15 @@ img {
 
 /* button class across all pages */
 .button{
-   background-color: aqua;
    
+   transition-duration: 0.25s;
+   border:2px solid black;
+   
+}
+.button:hover{
+  background-color: white;
+  color: darkgreen;
+
 }
 
 
