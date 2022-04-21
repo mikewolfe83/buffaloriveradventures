@@ -86,6 +86,16 @@ footer {
   color: #A6785D;
 }
 
+#brand {
+  font-weight: 700;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+#brand a {
+  color: #0D4650;
+}
 
 /* svg */
 .logo {
@@ -121,7 +131,7 @@ img {
 
 .bra-image {
   width: 100%;
-  max-width: 900px;
+  max-width: 900px
 }
 
 /* Section Classes */
@@ -140,6 +150,13 @@ img {
 
 }
 
+.prices{
+
+}
+
+.pricing{
+
+}
 
 .cards {
   display: flex;
@@ -162,13 +179,22 @@ img {
   display: table;
 }
 
+/* section class across all pages */
+.things{
+
+}
+
+/* button class across all pages */
+.button{
+   background-color: aqua;
+   
+}
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.container {
-  width: 100%;
-  max-width: 600px;
-}
+
   header.primary nav ul{
     flex-direction:column;
     justify-content:space-between;
@@ -179,10 +205,6 @@ img {
       }
 .directions {
   display: none;
-  }
-
-  .bra-image {
-    max-width: 85vw;
   }
 }
 
@@ -241,5 +263,3 @@ img {
       margin-bottom:60px;
       }
 }
-
-
