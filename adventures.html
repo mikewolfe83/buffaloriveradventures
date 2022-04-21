@@ -3,11 +3,13 @@
       <!-- starting head section -->
       <title>Buffalo River Adventures</title>
       <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name= "description" content="Buffalo River Adventures" />
       <meta name="author" content="Team Rocket Dev"/>
       <meta name="keywords" content="BUffalo River,Camping,Cabins"/>
         <link rel="stylesheet" href="https://use.typekit.net/njf0hpm.css">
-      <link href="/assets/css/styles.css" rel="stylesheet">
+      <link href="assets/css/styles.css" rel="stylesheet">
+      <link href="assets/css/menu.css" rel="stylesheet">
           <!-- finishing up head section -->
     </head>
 
@@ -16,31 +18,47 @@
 
     <body>
         <div class="container">
-            <header class="navbar"> <!-- navbar section -->
+            <div class="nav-container">
+                <header class="navbar"><!-- navbar section -->
                 <div class="brand">
                     <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
                 </div>
                 <nav class="primary">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="adventures.html">Advenures</a></li>
+                    <li><a href="adventures.html">Adventures</a></li>
                     <li><a href="explore.html">Explore</a></li>
                     <li><a href="level.html">Water Level</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>
-            </nav>       
+            </nav>   
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="adventures.html">Adventures</a></li>
+                  <li><a href="explore.html">Explore</a></li>
+                  <li><a href="level.html">Water Level</a></li>
+                  <li><a href="about.html">About</a></li>
+                </ul>
+              </div>    
             </header> <!-- navbar section closing -->
 
-        <section class="" id=""> <!-- first section section opening-->
+            <section class="masthead" id="advmast"> <!-- first section section opening-->
             <h1>Awaiting Adventures</h1>
            <h2>SUBHEADING OF TEXT</h2>
         </section>
 
-        <section class="" id=""> <!-- Plan you adenture section-->
-            <img src="assets/img/group1.webp" width="500" height=""> <h3>Plan YOUR ADVENTURE</h3>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sapiente dolorem iure optio enim velit sequi quaerat vero excepturi cumque alias commodi accusamus? Quia culpa neque modi saepe dignissimos adipisci!</P>
+        <section class="plan" id="plansec"> <!-- Plan you adenture section-->
+            <img src="assets/img/group1.webp" width="500" height=""> 
+            
+            <h3>Plan Your Adventure</h3>
 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, sapiente dolorem iure optio enim velit sequi quaerat vero excepturi cumque alias commodi accusamus? Quia culpa neque modi saepe dignissimos adipisci!</P>
+            <P>Plan your adventure here with us !!!! We have an assortment of activities to choose from with very competitive prices. Come check us out and have some fun at Buffalo River Adventures.</P>
+
+            <P>Plan you adventure below with our competitive prices listed below.</P>
             
             <!-- Bear Ridge Cabins section  -->
             <h4>Bear Ridge Cabins</h4>
@@ -50,8 +68,10 @@
             <h4>Shuttle Services</h4>
             <P>We offer shuttling services to the following put-in/take outs on the river. These prices are in addition to the canoe rental price and cover the shuttle cost of one vehichle.</P>
             </section>
-            <section class="" id=""> <!-- Pricing -->
+
+            <section class="prices" id=""> <!-- Pricing -->
                 <h4>Pricing</h4>
+
                 <article class="pricing">
                     <h5>Canoe Rentals</h5>
                     <ul>
@@ -68,7 +88,7 @@
                     </ul>
                     <p class="">Pricing is for 1-day canoe rental + tax </p>
 
-                    <button class="" type="button">Book Now!</button>
+                    <button class="book" type="button">Book Now!</button>
                 </article>
                 <article class="pricing">
                     <h5>Trip Pricing</h5>
@@ -82,7 +102,7 @@
                         <li>Hwy 123 (Carver)............................ $65.00</li>
                     </ul>
 
-                    <button class="" type="button">Book Now!</button>
+                    <button class="book" type="button">Book Now!</button>
                 </article>
                 <article class="pricing">
                     <h5>Cabin Pricing:</h5>
@@ -90,7 +110,7 @@
                         <li>$195 per night</li>
                         <li>$1195 per week</li>
                     </ul>
-                    <a><button class="" type="button">Book Now!</button></a>
+                    <a><button class="book" type="button">Book Now!</button></a>
                 </article>
                                                             
         </section><!-- canoe pricing section section closing -->
@@ -108,9 +128,7 @@
             </div>
     </body>
 
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    
     <script src="assets/js/script.js"></script>
 
     </html>
