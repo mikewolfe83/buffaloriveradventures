@@ -4,26 +4,13 @@
       <!-- starting head section -->
       <title>Buffalo River Adventures</title>
       <meta charset="utf-8"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name= "description" content="Buffalo River Adventures" />
       <meta name="author" content="Team Rocket Dev"/>
       <meta name="keywords" content="BUffalo River, Camping, Cabins"/>
       <link href="assets/css/lightbox.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/njf0hpm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/njf0hpm.css">
+    <script src="https://kit.fontawesome.com/ce5e146adf.js" crossorigin="anonymous"></script>
       <link href="assets/css/styles.css" rel="stylesheet">
-      <link href="assets/css/menu.css" rel="stylesheet">
-<html lang="en">
-    <head>
-      <!-- starting head section -->
-      <title>Buffalo River Adventures</title>
-      <meta charset="utf-8"/>
-      <meta name= "description" content="Buffalo River Adventures" />
-      <meta name="author" content="Team Rocket Dev"/>
-      <meta name="keywords" content="BUffalo River, Camping, Cabins"/>
-      <link href="assets/css/lightbox.min.css" rel="stylesheet">
-      <link href="assets/css/styles.css" rel="stylesheet">
-      <link href="assets/css/menu.css" rel="stylesheet">
-      <script src="https://kit.fontawesome.com/ce5e146adf.js" crossorigin="anonymous"></script>
     </head>
 
 
@@ -35,28 +22,30 @@
             <div class="brand">
                 <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
             </div>
+
             <nav class="primary">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="adventures.html">Adventures</a></li>
-                <li><a href="explore.html">Explore</a></li>
-                <li><a href="level.html">Water Level</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>   
-        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <ul class="mobile-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="adventures.html">Adventures</a></li>
-              <li><a href="explore.html">Explore</a></li>
-              <li><a href="level.html">Water Level</a></li>
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </div>    
-        </header> <!-- navbar section closing -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adventures.html">Advenures</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="level.html">Water Level</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>  
+
+            <div id="menu-btn" onClick="showMenu(true)"><i class="fa fa-bars fa-2x"></i></div>
+            <div id="menu__panel">
+              <i id="menu__close" class="menu__close fa fa-angle-left fa-2x" onClick="showMenu(false)"></i>
+              <ul class="menu">
+                <li class="menu-item"><a href="">HOME</a></li>
+                <li class="menu-item"><a href="adventure.html">Adventures</a></li>
+                <li class="menu-item"><a href="explore.html">Explore</a></li>
+                <li class="menu-item"><a href="level.html">Water Levels</a></li>
+                <li class="menu-item"><a href="about.html">About</a></li>
+              </ul>
+            </div>
+        </header>
+         <!-- navbar section closing -->
         <section class="masthead">
             <div class="mast-title"><h1>Witty Slogan Heading</h1>
             <h2>Subheading of text</h2></div>
@@ -103,7 +92,7 @@
             <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
         </div>
         <div class="directions"> map code  float left + address</div>
-        <nav class="footer-nav">
+        <nav class="secondary">
                 <ul>
                     <li><a href="adventures.html">Advenures</a></li>
                     <li><a href="explore.html">Explore</a></li>
@@ -115,5 +104,7 @@
 </div>
     <!-- lightbox js for gallery above footer-->
         <script src="assets/js/lightbox-plus-jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="assets/js/menu.js"></script>
     </body>
 </html>

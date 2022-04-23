@@ -6,7 +6,6 @@ tan: #F2C894;
 brown: #A6785D;
 black: #090909;
 white: #fff; */
-
 * {
   padding: 0;
   margin: 0;
@@ -17,6 +16,8 @@ body {
   color: #0D4650;
   background-color: #fff;
   font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: 500;
 }
 
 .container {
@@ -33,7 +34,7 @@ h1 {
 
 h2 {
   font-size: 2.2rem;
-  color: #a6785D;
+  color: #A6785D;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -49,41 +50,32 @@ h4 {
 }
 
 p {
-  font-weight: 1em;
-}
+  font-weight: 2em;
 
+}
 
 header a {
   text-decoration: none;
 }
 
 header {
-  padding: 0 20px;
-  height: 85px;
+  padding: 10px 20px;
+  height: 125px;
   background-color: #FFF7E9;
   display: flex;
   justify-content: space-between;
-}
-footer {
-  background-color: #fff7e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.navbar a {
-  font-family: Calibri, Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: uppsercase;
-  text-decoration: none;
-  color: #0D4650;
-}
-
-.navbar a:hover {
-  color: #A6785D;
+  text-transform: uppercase;
 }
 
 #brand {
@@ -97,11 +89,111 @@ footer {
   color: #0D4650;
 }
 
-/* svg */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/* Header Nav Menu */
+.fadeInDown {
+  opacity: 1 !important;
+  transform: translateY(40px) !important;
+}
+
+#menu-btn {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  /* To avoid icon movement on hover */
+  font-weight: 300;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transition: border-color 0.3s;
+  transform: translateY(-50%);
+}
+#menu-btn i {
+  margin-left: 10px;
+}
+#menu-btn:hover {
+  cursor: pointer;
+  border-color: #fff;
+}
+
+#menu__panel {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  z-index: 9999;
+  background-color: #FFF7E9;
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  transform: translateX(300px);
+  transition: transform 0.5s;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  top: 40px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu-item {
+  width: 100%;
+  height: 60px;
+  opacity: 0;
+  transform: translateY(0);
+  transition: all 0.3s;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.menu-item:hover {
+  background-color: #F2C894;
+}
+.menu-item i {
+  margin: 0 10px;
+}
+.menu-item a {
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  padding-left: 50px;
+  line-height: 70px;
+}
+
+.menu__close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 10px;
+  transition: transform 0.5s;
+}
+.menu__close:hover {
+  cursor: pointer;
+}
+
+/* SVG and images */
 .logo {
-  width: 75px;
-  height: 75px;
-  padding-top: 10px;
+  width: 100px;
+  height: 100px;
 }
 
 svg {
@@ -122,47 +214,43 @@ a.svg:after {
   left: 0;
 }
 
-/* images */
-
 img {
-  width: 100%;
   max-width: 900px;
-}
-
-.bra-image {
   width: 100%;
-  max-width: 900px
 }
 
-/* Section Classes */
-.content {
 
-}
-
+/* Sections */
 .masthead {
-
-}
-.home {
-  
-}
-
-.gallery {
-
+  height: 100%;
+  max-height: 45vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background: url("");
+  margin-top: 150px;
 }
 
-.prices{
-
+.masthead h1 {
+  text-align: center;
 }
 
-.pricing{
-
+.masthead h2 {
+  text-align: center;
 }
 
-.cards {
+.directions {
+  display: none;
+}
+
+
+.card {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+  background: tan;
 }
-.cards .title {
+.card .title {
   font-size: 2.5rem;
   color: #A6785D;
 }
@@ -179,104 +267,52 @@ img {
   display: table;
 }
 
-/* section class across all pages */
-.things{
-
+.plan{
+ margin: auto;
+ padding: 10px;
+ 
 }
 
-/* button class across all pages */
-.button a{
-   background-color: white;
-   border:none;
-   color:rgb(0, 0, 0);
-   padding: 15px 32px;
-   text-align:center;
-   text-decoration:none;
-   display:inline-block;
-   font-size: 14px;
-  transition-duration: 0.25s;
-   
+.adv h3{
+  margin-bottom: 20px;
 }
-
-.button:hover a{
-  background-color: darkgreen;
-}
-
-.button a:visited{
-  color:black;
-
-}
-
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  nav.primary {
+    display: none;
+  }
 
-  header.primary nav ul{
-    flex-direction:column;
-    justify-content:space-between;
-    }
+  iframe {
+    
+  }
 
-    header.primary nav li{
-      margin-bottom:10px;
-      }
-.directions {
-  display: none;
+  /*flexbox index*/
+  .adv {
+    flex: 1 1 auto;
+  }
+
+  .ex {
+    flex: 1 1 auto;
+  }
+
+  .wl {
+    flex: 1 1 auto;
+  }
+
+  .di {
+    flex: 1 1 auto;
+  }
+
+  .directions iframe {
+    display: none;
   }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
-  header.primary nav ul{
-    flex-direction:column;
-    justify-content:space-between;
-    }
-
-    header.primary nav li{
-      margin-bottom:20px;
-      }
-
+  #menu-btn {
+    display: none;
+  }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-  header.primary nav ul{
-    flex-direction:column;
-    justify-content:space-between;
-    }
-
-    header.primary nav li{
-      margin-bottom:30px;
-      }
-  
-}
-
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-  header.primary nav ul{
-    flex-direction:column;
-    justify-content:space-between;
-    }
-
-    header.primary nav li{
-      margin-bottom:40px;
-      }
-
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  header.primary nav ul{
-    flex-direction:column;
-    justify-content:space-between;
-    }
-
-    header.primary nav li{
-      margin-bottom:60px;
-      }
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) *//*# sourceMappingURL=style.css.map */
