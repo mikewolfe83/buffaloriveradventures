@@ -276,6 +276,31 @@ img {
 .adv h3{
   margin-bottom: 20px;
 }
+
+.adv p{
+  margin-bottom: 20px;
+}
+
+.cab h4{
+  margin-bottom: 20px;
+}
+
+.cab p{
+  margin-bottom: 20px;
+}
+
+.shut h4{
+  margin-bottom: 20px;
+}
+
+.shut p{
+  margin-bottom: 20px;
+}
+
+.prices{
+  margin: auto;
+  padding: 10px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   nav.primary {
