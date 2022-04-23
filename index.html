@@ -4,19 +4,17 @@
       <!-- starting head section -->
       <title>Buffalo River Adventures</title>
       <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
       <meta name= "description" content="Buffalo River Adventures" />
       <meta name="author" content="Team Rocket Dev"/>
       <meta name="keywords" content="BUffalo River, Camping, Cabins"/>
-      <link href="assets/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/njf0hpm.css">
     <script src="https://kit.fontawesome.com/ce5e146adf.js" crossorigin="anonymous"></script>
-      <link href="assets/css/styles.css" rel="stylesheet">
-    </head>
+    <link href="assets/css/lightbox.css" rel="stylesheet">
+      <link href="assets/css/style.css" rel="stylesheet">
+</head>
 
-
-    
-
-    <body>
+      <body>
         <div class="nav-container">
             <header class="navbar"><!-- navbar section -->
             <div class="brand">
@@ -45,54 +43,49 @@
               </ul>
             </div>
         </header>
-         <!-- navbar section closing -->
+        </div><!-- navbar section closing -->
         <section class="masthead">
             <div class="mast-title"><h1>Witty Slogan Heading</h1>
             <h2>Subheading of text</h2></div>
             <div class="scroll-">Scroll for more
-            <p><i class="fa-solid fa-angle-down"></i></p>
             </div>
         </section>
         <section class="home">
             <div class="content">
-                <article class="card">
-                    <a href="adventures.html" class="title">Adventures</a>
+                <article class="card adv">
+                    <a href="adventure.html" class="title">Adventure</a>
                 </article>
 
-                 <article class="card">
+                 <article class="card ex">
                    <a href="explore.html" class="title">Explore</a>
                 </article>
 
-                <article class="card">
+                <article class="card wl">
                     <a href="level.html">Water Levels</a>
                 </article>
   
-                 <article class="card">
+                 <article class="card di">
                     <a href="about.html">Directions</a>
                 </article>
 
-                <article class="card">
+                <article class="card res">
                     <a href="reserve.html" class="title">Reserve Now</a>
                 </article>
             </div>
-        </section>
-        <section class="gallery">
-            <div>
-                <a class="lightbox-image" href="assets/img/demo1.jpg" data-lightbox="bra-set" data-title="Image description here">
-                    <img class="bra-image" src="assets/img/demo1.jpg" alt=""/></a>
-                <a class="lightbox-image" href="assets/img/demo2.jpg" data-lightbox="bra-set" data-title="Image description here">
-                    <img class="bra-image" src="assets/img/demo2.jpg" alt="" /></a>
-                <a class="lightbox-image" href="assets/img/demo3.jpg" data-lightbox="bra-set" data-title="Image description here.">
-                    <img class="bra-image" src="assets/img/demo3.jpg" alt="" /></a>
-              </div>
-        </section>
+            <section class="gallery">
+                <div id="lightgallery">
+                    <a href="assets/img/demo1.jpg" data-lightbox="roadtrip"><img src="assets/img/demo1.jpg"></a>
+                    <a href="assets/img/demo2.jpg" data-lightbox="roadtrip"><img src="assets/img/demo2.jpg"></a>
+                    <a href="assets/img/demo3.jpg" data-lightbox="roadtrip"><img src="assets/img/demo3.jpg"></a>
+                </div>
+            </section>
        
         <footer class="" id="">
             <div class="brand">
             <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
         </div>
         <div class="directions"> map code  float left + address</div>
-        <nav class="secondary">
+        <nav class="footer-nav">
                 <ul>
                     <li><a href="adventures.html">Advenures</a></li>
                     <li><a href="explore.html">Explore</a></li>
@@ -103,8 +96,8 @@
     </footer>
 </div>
     <!-- lightbox js for gallery above footer-->
-        <script src="assets/js/lightbox-plus-jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="assets/js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/menu.js"></script>
     </body>
 </html>
