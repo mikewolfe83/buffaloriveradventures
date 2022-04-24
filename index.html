@@ -35,7 +35,7 @@
             <div id="menu__panel">
               <i id="menu__close" class="menu__close fa fa-angle-left fa-2x" onClick="showMenu(false)"></i>
               <ul class="menu">
-                <li class="menu-item"><a href="">HOME</a></li>
+                <li class="menu-item"><a href="index.html">HOME</a></li>
                 <li class="menu-item"><a href="adventure.html">Adventures</a></li>
                 <li class="menu-item"><a href="explore.html">Explore</a></li>
                 <li class="menu-item"><a href="level.html">Water Levels</a></li>
@@ -47,44 +47,87 @@
         <section class="masthead">
             <div class="mast-title"><h1>Witty Slogan Heading</h1>
             <h2>Subheading of text</h2></div>
-            <div class="scroll-">Scroll for more
-            </div>
         </section>
+
         <section class="home">
             <div class="content">
-                <article class="card adv">
-                    <a href="adventure.html" class="title">Adventure</a>
-                </article>
-
-                 <article class="card ex">
-                   <a href="explore.html" class="title">Explore</a>
-                </article>
-
-                <article class="card wl">
-                    <a href="level.html">Water Levels</a>
-                </article>
-  
-                 <article class="card di">
-                    <a href="about.html">Directions</a>
-                </article>
-
-                <article class="card res">
-                    <a href="reserve.html" class="title">Reserve Now</a>
+                <article class="cards">
+                    <div class="card content">
+                      <div class="card-content">
+                        <div class="card-img">
+                          <img src="assets/img/demo1.jpg" alt="Canoeing">
+                        </div>
+                        <div class="card-title">
+                          Adventure
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card content">
+                      <div class="card-content">
+                        <div class="card-img">
+                          <img src="assets/img/overlook1.webp" alt="Overlook">
+                        </div>
+                        <div class="card-title">
+                          Explore
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card content">
+                      <div class="card-content">
+                        <div class="card-img">
+                          <img src="assets/img/canoe5.webp" alt="Canoe">
+                        </div>
+                        <div class="card-title">
+                          Water Levels
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card content">
+                        <div class="card-content">
+                          <div class="card-img">
+                            <img src="assets/img/cliff3.webp" alt="cliff">
+                          </div>
+                          <div class="card-title">
+                            Directions
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card content">
+                        <div class="card-content">
+                          <div class="card-img">
+                            <img src="assets/img/canoe6.webp" alt="">
+                          </div>
+                          <div class="card-title">
+                            Reserve Now 
+                          </div>
+                        </div>
+                      </div>
                 </article>
             </div>
+            </section>
             <section class="gallery">
-                <div id="lightgallery">
-                    <a href="assets/img/demo1.jpg" data-lightbox="roadtrip"><img src="assets/img/demo1.jpg"></a>
-                    <a href="assets/img/demo2.jpg" data-lightbox="roadtrip"><img src="assets/img/demo2.jpg"></a>
-                    <a href="assets/img/demo3.jpg" data-lightbox="roadtrip"><img src="assets/img/demo3.jpg"></a>
-                </div>
+              <div class="col">
+                <div id="lightgallery"><a href="assets/img/canoe1.webp" data-lightbox="river-adventures"><img src="assets/img/canoe1.webp" class="thumb"></a></div>
+                <div id="lightgallery"><a href="assets/img/demo3.jpg" data-lightbox="river-adventures"><img src="assets/img/demo3.jpg" class="thumb"></a></div>
+                <div id="lightgallery"><a href="assets/img/canoe7.webp" data-lightbox="river-adventures"><img src="assets/img/canoe7.webp" class="thumb"></a></div>
+              </div>
+              <div class="col">
+                <div id="lightgallery"><a href="assets/img/canoe1.webp" data-lightbox="river-adventures"><img src="assets/img/canoe1.webp" class="thumb"></a></div>
+                <div id="lightgallery"><a href="https://enso.codes/prototype/assets/img/emissary.jpeg" data-lightbox="river-adventures"><img src="https://enso.codes/prototype/assets/img/emissary.jpeg" class="thumb"></a></div>
+                <div id="lightgallery"><a href="https://enso.codes/prototype/assets/img/emissary.jpeg" data-lightbox="river-adventures"><img src="https://enso.codes/prototype/assets/img/emissary.jpeg" class="thumb"></a></div>
+              </div>
+              <div class="col-2">
+                <div id="lightgallery"><a href="https://enso.codes/prototype/assets/img/emissary.jpeg" data-lightbox="river-adventures"><img src="https://enso.codes/prototype/assets/img/emissary.jpeg" class="thumb"></a></div>
+                <div id="lightgallery"><a href="https://enso.codes/prototype/assets/img/emissary.jpeg" data-lightbox="river-adventures"><img src="https://enso.codes/prototype/assets/img/emissary.jpeg" class="thumb"></a></div>
+                <div id="lightgallery"><a href="https://enso.codes/prototype/assets/img/emissary.jpeg" data-lightbox="river-adventures"><img src="https://enso.codes/prototype/assets/img/emissary.jpeg" class="thumb"></a></div>
+              </div>
             </section>
        
-        <footer class="" id="">
+        <footer class="main-foot">
             <div class="brand">
             <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
         </div>
-        <div class="directions"> map code  float left + address</div>
+        <div class="directions"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7662959348627!2d-93.36735538521353!3d36.02599998011539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a8038d03ba84f9d!2zMzbCsDAxJzMzLjYiTiA5M8KwMjEnNTQuNiJX!5e0!3m2!1sen!2sus!4v1650391671542!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         <nav class="footer-nav">
                 <ul>
                     <li><a href="adventures.html">Advenures</a></li>
@@ -101,3 +144,4 @@
     <script src="assets/js/menu.js"></script>
     </body>
 </html>
+
