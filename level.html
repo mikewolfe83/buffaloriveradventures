@@ -16,40 +16,47 @@
 
 
     
+    <body onload="ShowLevel()">
 
-    <body>
-        <div class="container">
-            <div class="nav-container">
-                <header class="navbar"><!-- navbar section -->
-                <div class="brand">
-                    <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
-                </div>
-                <nav class="primary">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="adventures.html">Adventures</a></li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="level.html">Water Level</a></li>
-                    <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>   
-            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                <ul class="mobile-menu">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="adventures.html">Adventures</a></li>
-                  <li><a href="explore.html">Explore</a></li>
-                  <li><a href="level.html">Water Level</a></li>
-                  <li><a href="about.html">About</a></li>
-                </ul>
-              </div>    
-            </header> <!-- navbar section closing -->
-    
-        <section class="level" id="level"></section>
-       <body onload="ShowLevel()">
-        <div class="clearfix">
+    <div class="nav-container">
+      <header class="navbar"><!-- navbar section -->
+      <div class="brand">
+          <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
+      </div>
+
+      <nav class="primary">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="adventures.html">Adventures</a></li>
+              <li><a href="explore.html">Explore</a></li>
+              <li><a href="level.html">Water Level</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>  
+
+      <div id="menu-btn" onClick="showMenu(true)"><i class="fa fa-bars fa-2x"></i></div>
+      <div id="menu__panel">
+        <i id="menu__close" class="menu__close fa fa-angle-left fa-2x" onClick="showMenu(false)"></i>
+        <ul class="menu">
+          <li class="menu-item"><a href="index.html">HOME</a></li>
+          <li class="menu-item"><a href="adventures.html">Adventures</a></li>
+          <li class="menu-item"><a href="explore.html">Explore</a></li>
+          <li class="menu-item"><a href="level.html">Water Levels</a></li>
+          <li class="menu-item"><a href="about.html">About</a></li>
+        </ul>
+      </div>
+  </header>
+  </div><!-- navbar section closing -->
+  <section class="masthead">
+    <div class="mast-title"><h1>Witty Slogan Heading</h1>
+    <h2>Subheading of text</h2></div>
+</section>
+<div class="content">
+        <section class="home">
+          <h3>River Levels</h3>
+          <p>The Buffalo National River was the first designated National River with an abundance of wildlife and scenery located in North Eastern Arkansas. We understand that sometimes the rivers can be difficult to predict, but we have provided the most recent data to make the most of your trip any time of year!</p>
+          </section>
+          <section class="levels">
             <div class="img-container">
                 <canvas id="chartjs-0" width="400" height="400"></canvas> 
                 <canvas id="chartjs-1" width="400" height="400"></canvas>
@@ -57,17 +64,26 @@
                 <canvas id="chartjs-3" width="400" height="400"></canvas>
                 </div>
             </div>
+          </section>
         </div>
-
-
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/2FNpgrIDIGw?start=52" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-
-
-        <footer class="" id=""> Company Logo | Map | Address</footer> <!-- footer = LOGO | MAP | Address -->
+        <footer class="main-foot">
+            <div class="brand2">
+            <a href="index.html" class="svg"><object data="assets/img/svg/color-logo.svg" class="logo"></object></a>
+        </div>
+        <div class="directions"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.7662959348627!2d-93.36735538521353!3d36.02599998011539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5a8038d03ba84f9d!2zMzbCsDAxJzMzLjYiTiA5M8KwMjEnNTQuNiJX!5e0!3m2!1sen!2sus!4v1650391671542!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        <div class="address"><strong>36°01'33.6"N 93°21'54.6"W</strong><br>
+          AR-43, Compton, AR 72624
+        <p>
+          <a href="https://www.google.com/maps/place/36%C2%B001'33.6%22N+93%C2%B021'54.6%22W/@36.0261133,-93.3654997,19.77z/data=!4m5!3m4!1s0x0:0x0!8m2!3d36.026009!4d-93.365169" target="new" class="bttn">Get Directions</a></p></div>
+        <nav class="footer-nav">
+                <ul>
+                    <li><a href="adventures.html">Advenures</a></li>
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="level.html">Water Level</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+        </nav>
+    </footer>
     </div>
     </body>
 
