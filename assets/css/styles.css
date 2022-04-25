@@ -303,7 +303,7 @@ a.svg:after {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("assets/img/canoe1.webp");
+  background-image: url("/assets/img/canoe1.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -318,8 +318,7 @@ a.svg:after {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("assets/img/group1.webp");
-  background-position: top;
+  background-image: url("/assets/img/group1.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -331,7 +330,7 @@ a.svg:after {
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-image: url("assets/img/overlook2.webp");
+  background-image: url("/assets/img/overlook2.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
