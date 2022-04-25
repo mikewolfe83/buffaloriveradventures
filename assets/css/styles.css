@@ -247,7 +247,19 @@ a.svg:after {
   margin-bottom: 10px;
 }
 
+.cab2 p{
+  padding: 10px;
+}
 
+.cab3 ul{
+  list-style: none;
+  padding:20px;
+}
+
+.cabpic1{
+  max-width: 300px;
+  max-height: 200px;
+}
 
 
 
@@ -297,7 +309,9 @@ a.svg:after {
   background-attachment: scroll;
   background-size: cover;
 }
-
+#arts {
+  display:flex
+}
 #advmast {
   position: relative;
   width: 100%;
@@ -311,6 +325,18 @@ a.svg:after {
   background-size: cover;
 }
 
+#cabmast {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
+  padding: 15rem 0;
+  background-image: url("assets/img/overlook2.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
 
 .img-container {
