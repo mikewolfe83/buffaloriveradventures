@@ -24,7 +24,7 @@ body {
 
 /* Base Font properties */
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.7rem;
   color: #0D4650;
   font-weight: 700;
 }
@@ -48,6 +48,8 @@ h4 {
 
 p {
   font-weight: 1em;
+  line-height: 1.5;
+
 }
 
 header a {
@@ -85,6 +87,10 @@ header {
   color: #0D4650;
 }
 
+.brand2 {
+margin: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -106,6 +112,16 @@ a {
 }
 .primary ul li {
   padding: 30px 10px;
+}
+
+.bttn {
+  color:#A6785D;
+  border: 2px solid #A6785D;
+  background-color: #FFF7E9;
+  padding: 5px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 /* Mobile Menu*/
@@ -262,27 +278,78 @@ a.svg:after {
 }
 
 
+/* Section Mastheads*/
 
+#home {
+  position: relative;
+  top: 100px;
+  background-image: url ("assets/img/canoe1.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#explorehead {
+  position: relative;
+  top: 100px;
+  background-image: url("../img/canoe1.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#arts {
+  display:flex;
+  padding-top: 50px;
+}
 
+#advmast {
+  position: relative;
+  top: 100px;
+  background-image: url("../img/group1.webp");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
+#cabmast {
+  position: relative;
+  top: 100px;
+  background-image: url("../img/overlook2.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
+#levelhead {
+  top: 100px;
+  position: relative;
+  background-image: url("../img/overlook1.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
+#abtmast {
+top: 100px;
+position: relative;
+  background-image: url("../img/overlook3.webp");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
 
-
-
-
-
-/* Sections */
 .masthead {
+  background: rgba(255, 247, 233, 0.4);
+  overflow: hidden;
   position: relative;
   width: 100%;
   height: auto;
   min-height: 45rem;
   padding: 15rem 0;
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 .masthead h1 {
   text-align: center;
@@ -297,71 +364,6 @@ a.svg:after {
   padding: 10em;
 }
 
-#explorehead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-image: url("../img/canoe1.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-#arts {
-  display:flex
-}
-#advmast {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-image: url("../img/group1.webp");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#cabmast {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-image: url("../img/overlook2.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#levelhead {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-image: url("../img/overlook1.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
-
-#abtmast {
-  position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 45rem;
-  padding: 15rem 0;
-  background-image: url("../img/overlook3.webp");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
-}
 
 
 .img-container {
@@ -376,7 +378,7 @@ a.svg:after {
   display: table;
 }
 
-.content {
+.content, .home-content {
   width: 100%;
   max-width: 95vw;
   margin: auto;
@@ -403,7 +405,7 @@ a.svg:after {
 
 /* cards */
 .home {
-  padding: 150px auto;
+  padding: 150px 0;
 }
 
 .cards {
@@ -508,6 +510,8 @@ footer {
   width: 100%;
   grid-gap: 1em;
   grid-template-areas: "f g h i";
+  grid-template-columns: repeat (4, 1fr);
+  align-items: center;
 }
 footer .directions {
   position: relative;
@@ -533,6 +537,10 @@ footer iframe {
   left: 0;
   width: 75% !important;
   height: 100% !important;
+}
+footer p {
+  line-height: 2;
+  margin:auto;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -590,5 +598,12 @@ footer iframe {
 @media only screen and (min-width: 2400px){
   .content {
     max-width: 1400px;
+  }
+
+  .home-content {
+    max-width: 2000px;
+  }
+  h1 {
+    font-size: 10rem;
   }
 }
