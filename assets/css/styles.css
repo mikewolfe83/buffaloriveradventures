@@ -305,7 +305,7 @@ a.svg:after {
 
 #advmast {
   position: relative;
-  top: 100px;
+  top: 2px;
   background-image: url("../img/group1.webp");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -543,6 +543,13 @@ footer p {
   margin:auto;
 }
 
+.footer-nav ul{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   nav.primary {
@@ -567,6 +574,22 @@ footer p {
 
   .directions iframe {
     display: none;
+  }
+  footer {
+    
+    
+    width: calc(100% - 2em);
+    
+    margin: auto;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-areas: "f" "g" "h" "i";
+    grid-template-rows: repeat (4, 1fr);
+    align-items: center;
+  }
+
+  .address{
+    text-align: center;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
