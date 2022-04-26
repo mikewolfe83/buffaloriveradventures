@@ -280,10 +280,10 @@ a.svg:after {
 
 /* Section Mastheads*/
 
-#home {
+#homemast {
   position: relative;
   top: 100px;
-  background-image: url ("assets/img/canoe1.webp");
+  background-image: url("../img/canoe1.webp");
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: scroll;
