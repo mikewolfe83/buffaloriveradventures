@@ -299,13 +299,23 @@ a.svg:after {
   margin-bottom: 20px;;
 }
 
+.cab2{
+  margin-top:155px;
+}
+
 .cab2 p{
   padding: 10px;
 }
 
 .cab3 ul{
+  margin: 250px;
   list-style: none;
   padding:20px;
+  
+}
+
+#ambtn{
+  margin: 30px;
 }
 
 .cabpic1{
@@ -320,6 +330,30 @@ a.svg:after {
 .clip1{
   margin: 50px;
 }
+
+/* cabin gallery*/
+div.cabgallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.cabgallery:hover {
+  border: 1px solid #777;
+}
+
+div.cabgallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
 
 
 /* Section Mastheads*/
@@ -344,10 +378,15 @@ a.svg:after {
 }
 #arts {
   display:flex;
-  
+  justify-content: space-evenly;
   padding-top: 50px;
+  gap: 20px;
 }
-
+.things {
+  background-color:#A6785D;
+  border-radius: 25px;
+  padding:10px;
+}
 #advmast {
   position: relative;
   top: 2px;
