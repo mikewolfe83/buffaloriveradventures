@@ -266,8 +266,13 @@ a.svg:after {
   margin: 20px;
 }
 
+.pricing h3{
+  padding-bottom: 20px;;
+}
+
 
 .pricing ul{
+  margin-right:200px;
   list-style:none;
   padding: 20px;
   
