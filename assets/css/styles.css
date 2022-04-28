@@ -432,11 +432,12 @@ div.desc {
 #cabmast {
   position: relative;
   top: 100px;
-  background-image: url("../img/overlook2.webp");
-  background-position: top;
+  background: url("../img/cabins/bear-ridge-2.webp") no-repeat center/
+  cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+
 }
 
 #levelhead {
