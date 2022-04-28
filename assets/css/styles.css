@@ -290,6 +290,14 @@ a.svg:after {
   margin:20px;
 }
 
+.adv{
+  margin-top: 10px;;
+}
+
+.cabli{
+  margin-top: 20px;
+  margin-bottom: 20px;;
+}
 
 .cab2 p{
   padding: 10px;
@@ -336,6 +344,7 @@ a.svg:after {
 }
 #arts {
   display:flex;
+  
   padding-top: 50px;
 }
 
