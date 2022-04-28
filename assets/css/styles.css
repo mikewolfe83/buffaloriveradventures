@@ -247,6 +247,10 @@ a.svg:after {
   left: 0;
 }
 
+.pricing{
+  margin: 20px;
+}
+
 
 .pricing ul{
   list-style:none;
@@ -256,12 +260,36 @@ a.svg:after {
 
 .pricing p{
   padding-bottom: 15px;
+  
 }
 
 .button{
-  padding: 5px;
-  margin-bottom: 10px;
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #0D4650;
+  background-color: #F2C894;
+  border: none;
+  border-radius: 15px;
+
 }
+
+.button:hover {background-color: #A6785D;}
+
+.button:active {
+  background-color: #FFF7E9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.plan{
+  margin:20px;
+}
+
 
 .cab2 p{
   padding: 10px;
@@ -275,6 +303,14 @@ a.svg:after {
 .cabpic1{
   max-width: 300px;
   max-height: 200px;
+}
+
+.cabbutton{
+  padding:5px;
+}
+
+.clip1{
+  margin: 50px;
 }
 
 
@@ -341,6 +377,8 @@ position: relative;
   background-attachment: scroll;
   background-size: cover;
 }
+
+
 
 .masthead {
   background: rgba(255, 247, 233, 0.4);
