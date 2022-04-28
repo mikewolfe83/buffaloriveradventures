@@ -284,14 +284,14 @@
 
 .carousel {
   margin: 0 auto !important;
-  width: 900px;
+  width: 850;
 
   &__items {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    width: 900px;
-    height: 600px;
+    width: 850px;
+    height: 567px;
     position: relative;
   }
   &__prev {
@@ -301,7 +301,7 @@
   }
 &__next {
   > label {
-    right: 0.9%;
+    right: 2.2%;
    }
   }
 }
@@ -311,14 +311,14 @@
 
   .carousel {
     margin: 0 auto !important;
-    width: 1100px;
+    width: 900px;
   
     &__items {
       margin: 0;
       padding: 0;
       list-style-type: none;
-      width: 1100px;
-      height: 680px;
+      width: 900px;
+      height: 600px;
       position: relative;
     }
     &__prev {
